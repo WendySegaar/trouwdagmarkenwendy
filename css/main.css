@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+:root {
+  --blue: #5b6986;
+  --brown: #885e62;
+  --beige: #dfc8ba;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+p {
+	margin-top: .6em;
+	font-size: 1em;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header img {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header h1 {
+	margin-top: 3vw;
+    font-family: 'Dancing Script', cursive;
+    font-size: 10vw;
+}
+
+header h2 {
+	margin-top: 33vw;
+	font-size: 6vw;
+}
+
+header h6 {
+	margin: 45vw 0 6vw 0;
+	font-size: 3.5vw;
+}
+
+.divider {
+	width: 100%;
+	margin-bottom: -1em;
+}
+
+.lane {
+	padding: 2.5em 2em;
+}
+
+.blueLane {
+	padding: 2em;
+	background-color: var(--blue);
+}
+
+.blueLane * {
+	color: white;
+	position: relative;
+}
+
+.border {
+	margin: -1vw;
+}
+
+.border:before {
+	position: absolute;
+	content: "";
+	width: 24vw;
+	height: 5vw;
+ 	background-color: white;
+  	left:-3px;
+ 	top: -3px;
+}
+
+.border:after {
+ 	position: absolute;
+	content: "";
+	width: 24vw;
+	height: 5vw;
+ 	background-color: white;
+  	right: -3px;
+ 	bottom: -3px;
+}
+
+.blueLaneText {
+	background-color: var(--blue);
+	z-index: 100;
+	padding: 3vw;
+}
+
+@media (min-width: 480px) {
+
+	h2 {
+		font-size: 2em;
+	}
+
+	p {
+		margin-top: 1em;
+		font-size: 1.2em;
+	}
+
+	.divider {
+		margin-bottom: -1.5em;
+	}		
+
+	.lane {
+		padding: 4em 3em;
+	}
+}
+
+@media (min-width: 845px) {
+
+	header img {
+		height: 94vh;
+		width: auto;
+	}
+
+	header h1 {
+		margin-top: 3vh;
+		font-size: 9.4vh;
+	}
+
+	header h2 {
+		margin-top: 31vh;
+		font-size: 5.6vh;
+	}
+	
+	header h6 {
+		margin: 42vh 0 4vw 0;
+		font-size: 3vh;
+	}
+
+	.divider {
+		margin-bottom: -2vw;
+	}	
+
+	.lane {
+		padding: 5vw 10vw;
+	}
+	
+}
+
+
+@media (min-width: 1200px) {
+	h2 {
+		font-size: 2.4em;
+	}
+
+	p {
+		margin-top: 1.2em;
+		font-size: 1.3em;
+	}
+
+	.divider {
+		margin-bottom: -2.3vw;
+	}
+
+	.lane {
+		padding: 6vw 15vw;
+	}
+}
+
+@media (min-width: 1600px) {
+	.lane {
+		padding: 6vw 25vw;
+	}
+}
