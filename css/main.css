@@ -28,7 +28,6 @@ h2 {
 
 p {
 	font-size: 1rem;
-	margin-top: .6rem;
 }
 
 header {
@@ -60,16 +59,21 @@ header h2 {
 }
 
 header h6 {
-	margin: 45vw 0 1rem 0;
+	margin: 45vw 0 2rem 0;
 	font-size: 4vw;
 }
 
 .divider {
 	width: 100%;
+	margin: -.5rem 0 -.5rem 0;
 }
 
 .lane {
 	padding: 1rem;
+}
+
+.lane h1 {
+	margin-bottom: .6rem;
 }
 
 .blueLane {
@@ -110,6 +114,29 @@ header h6 {
 	margin-top: 3rem;
 }
 
+.planning {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 1rem;
+}
+
+.planningItem {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-row-gap: .2rem;
+}
+
+.planningIcon {
+	grid-column-start: 2;
+	font-size: 1.6rem;
+}
+
+.planningTime {
+	font-size: 1.4rem;
+}
+
+
 @media (min-width: 480px) {
 
 	h1 {
@@ -122,7 +149,6 @@ header h6 {
 
 	p {
 		font-size: 1.2rem;
-		margin-top: 1rem;
 	}
 	
 	header h6 {
@@ -132,6 +158,10 @@ header h6 {
 
 	.lane {
 		padding: 3rem 12vw;
+	}
+
+	.lane h1 {
+		margin-bottom: 1rem;
 	}
 
 	.blueLane {
@@ -150,6 +180,39 @@ header h6 {
 	.border:before, .border:after {
 		width: 12rem;
 		height: 5rem;
+	}
+
+
+	.planningLane h1 {
+		 text-align: center;
+	}
+
+	.planning {
+		margin-top: 4rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 4rem;
+		grid-column-gap: 2rem;
+	}
+
+
+	.planningItem {
+		grid-template-columns: 30% 70%;
+		grid-column-gap: .2rem;
+	}
+
+
+	.planningIcon {
+		font-size: 2rem;
+	}
+
+	.planningTime {
+		font-size: 1.6rem;
+	}
+
+	.infoLane {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 3rem;
 	}
 }
 
@@ -174,6 +237,23 @@ header h6 {
 		margin-top: 42vh;
 		font-size: 3vh;
 	}
+
+	.planning {
+		grid-column-gap: 8rem;
+	}
+
+	.planningItem {
+		grid-column-gap: 3rem;
+	}
+
+	.planningIcon {
+		font-size: 2.5rem;
+	}
+
+	.planningTime {
+		font-size: 1.8rem;
+	}
+	
 }
 
 
@@ -188,15 +268,22 @@ header h6 {
 
 	p {
 		font-size: 1.3rem;
-		margin-top: 1.2rem;
 	}
 
 	header h6 {
-		margin-bottom: 5rem;
+		margin-bottom: 9rem;
+	}
+
+	.divider {
+		margin-bottom: -4rem;
 	}
 
 	.lane {
-		padding: 5rem 28vw;
+		padding: 10rem 22vw;
+	}
+
+	.lane h1 {
+		margin-bottom: 1.2rem;
 	}
 
 	.blueLane {
@@ -214,5 +301,9 @@ header h6 {
 	.border:before, .border:after {
 		width: 24rem;
 		height: 7rem;
+	}
+
+	.planningTime {
+		font-size: 2rem;
 	}
 }
