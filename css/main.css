@@ -95,19 +95,19 @@ header h6 {
 .border:before, .border:after {
 	position: absolute;
 	content: "";
-	width: 12rem;
+	width: 8rem;
 	height: 3rem;
  	background-color: white;
 }
 
 .border:before {
-  	left:-3px;
- 	top: -3px;
+  	left: -2px;
+ 	top: -2px;
 }
 
 .border:after {
-  	right: -3px;
- 	bottom: -3px;
+  	right: -2px;
+ 	bottom: -2px;
 }
 
 .blueLaneText {
@@ -116,8 +116,8 @@ header h6 {
 	padding: 2rem;
 }
 
-.blueLaneText h2 {
-	margin-top: 3rem;
+.blueLaneText h3 {
+	margin-top: 1rem;
 }
 
 .planning {
@@ -185,13 +185,23 @@ header h6 {
 	}
 
 
-	.blueLaneText h2 {
+	.blueLaneText h3 {
 		margin-top: 2rem;
 	}
 
 	.border:before, .border:after {
 		width: 12rem;
 		height: 5rem;
+	}
+
+	.border:before {
+	  	left:-3px;
+	 	top: -3px;
+	}
+
+	.border:after {
+	  	right: -3px;
+	 	bottom: -3px;
 	}
 
 	.planningLane h1 {
@@ -258,12 +268,21 @@ header h6 {
 		font-size: 3vh;
 	}
 
-	.lane, .blueLane {
+	.lane {
 		padding: 4rem 16vw;
+	}
+
+	.blueLane {
+		padding: 4rem 10vw;
 	}
 
 	.blueLaneText {
 		padding: 4rem;
+	}
+
+	.border:before, .border:after {
+		width: 18rem;
+		height: 6rem;
 	}
 
 	.planning {
@@ -314,11 +333,11 @@ header h6 {
 	}
 
 	.blueLane {
-		padding: 6rem 26vw;
+		padding: 6rem 18vw;
 	}
 
 	.blueLaneText {
-		padding: 4rem 6rem;
+		padding: 4rem 8rem;
 	}
 
 	.blueLaneText h2 {
@@ -332,12 +351,5 @@ header h6 {
 
 	.planningTime {
 		font-size: 2rem;
-	}
-}
-
-@media (min-width: 1600px) {
-
-	.blueLane {
-		padding: 6rem 30vw;
 	}
 }
