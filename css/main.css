@@ -293,7 +293,7 @@ header h6 {
 
 	.border:before, .border:after {
 		width: 18rem;
-		height: 6rem;
+		height: 4rem;
 	}
 
 	.planning {
@@ -339,7 +339,7 @@ header h6 {
 	.divider {
 		margin: -2rem 0;
 	}
-	
+
 	.lane {
 		padding: 8rem 22vw;
 	}
@@ -362,7 +362,7 @@ header h6 {
 
 	.border:before, .border:after {
 		width: 24rem;
-		height: 7rem;
+		height: 5rem;
 	}
 
 	.planningTime {
